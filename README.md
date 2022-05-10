@@ -1,0 +1,3 @@
+# assistente-para-rpg-de-mesa
+Dynamics é um assistente para RPG de mesa que tem como objetivo facilitar os jogadores que já jogam faz um tempo e ajudar novos jogadores a começar nesse estilo de jogo. O site conta com criação de fichas, selecionar mapas e escolher os melhores para a sua jornada. 
+Além de um diário de aventura, no qual o usuário poderá escrever onde parou na última partida. Também possui um layout totalmente responsivo. Esse projeto foi feito para o TCC do curso de desenvolvimento de sistemas da ETEC Doutora Ruth Cardoso, feito pelos alunos: Carlos Augusto: front end , Giovana : back end, José Henrique : design e Yuri : banco de dados.
