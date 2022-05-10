@@ -1,0 +1,21 @@
+.cadastro,
+.login {
+    margin: 2rem;
+}
+
+.logo {
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+}
+
+.inputs {
+    margin-top: 6rem;
+}
+
+input {
+    margin-bottom: 0.5rem;
+}
+
+.loginBanner {
+    object-fit: cover;
+}

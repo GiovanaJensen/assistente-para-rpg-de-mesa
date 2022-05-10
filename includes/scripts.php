@@ -1,0 +1,9 @@
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/instagramfeed.js"></script>
+<script src="js/function.js"></script>

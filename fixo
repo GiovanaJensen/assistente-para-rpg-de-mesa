@@ -1,0 +1,123 @@
+STATUS
+
+INPUTS
+
+- exp
+- pontos de vida atual
+
+AUTOMATICO 
+
+- todos os outros do status
+
+
+
+CARACTERISTICAS
+
+INPUTS
+
+- idade
+- peso
+- altura
+- caracteristicas
+
+FIXO
+
+- todos os outros da caracteristica
+
+
+
+
+PERSONALIDADE
+
+FIXO
+
+- classe
+- antecedente
+
+INPUTS
+
+- tendencia
+- biografia
+
+
+
+HABILIDADES
+
+TODOS INPUTS
+
+
+RESISTENCIAS
+
+TUDO FIXO
+
+
+
+PERICIAS
+
+- TUDO AUTOMATICO
+
+
+
+PROFICIENCIA
+
+FIXO
+
+- o que for sim
+
+INPUTS
+
+- o que for não
+
+
+
+MOEDAS
+
+- TUDO INPUTS
+
+
+
+
+ARSENAL
+
+
+
+
+CRIACAO -> ATRIBUTOS 
+
+SÓ ADICIONA OS NR_FORCA, DESTREZA ...
+
+RESTO AUTOMATICO
+
+
+-----------------------------------------------------
+--PARTE 2
+
+	/*2*/CD_PERSONAGEM INT NOT NULL,
+	/*2*/CD_RACA INT NOT NULL,
+	/*2*/CD_SUB_RACA INT,
+	/*2*/NR_IDADE INT NOT NULL,
+	/*2*/DS_SEXO CHAR(1) NOT NULL,
+	/*2*/NR_PESO_KG INT NOT NULL,
+	/*2*/NR_ALTURA_CM INT NOT NULL,
+	/*2*/CD_OLHO INT NOT NULL,
+	/*2*/CD_PELE INT NOT NULL,
+	/*2*/CD_CABELO INT,
+	/*2*/DS_CARACTERISTICAS TEXT,
+	/*2*/IM_PERSONAGEM VARCHAR(100),
+
+    /*2*/NR_EXPERIENCIA INT,
+	/*2*/VL_PECAS_COBRE INT NOT NULL DEFAULT 0,
+	/*2*/VL_PECAS_PRATA INT NOT NULL DEFAULT 0,
+	/*2*/VL_PECAS_OURO INT NOT NULL DEFAULT 0,
+
+	selecione se os seus atributos seram gerados aleatoriamente (são jogados 4d6 e somado o valor dos 3 maior, isso é feito 6 vezes) ou de forma Fixa com os valores 8 - 10 - 12 - 13 -14 - 15
+
+
+	<?php
+                                           $comandoSQL = "SELECT * FROM TB_OPCAO_ATRIBUTO WHERE CD_PERSONAGEM = $cd_personagem;";
+                                           $dados = $conn->query($comandoSQL);
+                                           foreach($dados as $dado){
+                                               ?>
+                                               <option selected><?php echo $dado[0];?></option>
+                                               <?php
+                                           }
